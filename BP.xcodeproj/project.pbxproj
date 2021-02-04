@@ -16,6 +16,7 @@
 		78CA10D625CBE67C00B8EB78 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CA10D525CBE67C00B8EB78 /* CameraViewController.swift */; };
 		78CA10DD25CBFF7A00B8EB78 /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CA10DC25CBFF7A00B8EB78 /* GPSViewController.swift */; };
 		78CA10E125CC1BFE00B8EB78 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CA10E025CC1BFE00B8EB78 /* StorageViewController.swift */; };
+		78CA10E425CC29A600B8EB78 /* FaceIDViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CA10E325CC29A600B8EB78 /* FaceIDViewContoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		78CA10D525CBE67C00B8EB78 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		78CA10DC25CBFF7A00B8EB78 /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
 		78CA10E025CC1BFE00B8EB78 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
+		78CA10E325CC29A600B8EB78 /* FaceIDViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDViewContoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				78CA10D525CBE67C00B8EB78 /* CameraViewController.swift */,
 				78CA10DC25CBFF7A00B8EB78 /* GPSViewController.swift */,
 				78CA10E025CC1BFE00B8EB78 /* StorageViewController.swift */,
+				78CA10E325CC29A600B8EB78 /* FaceIDViewContoller.swift */,
 			);
 			path = BP;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CA10E425CC29A600B8EB78 /* FaceIDViewContoller.swift in Sources */,
 				78A442EF25CBE25200F73A95 /* ViewController.swift in Sources */,
 				78CA10DD25CBFF7A00B8EB78 /* GPSViewController.swift in Sources */,
 				78CA10E125CC1BFE00B8EB78 /* StorageViewController.swift in Sources */,

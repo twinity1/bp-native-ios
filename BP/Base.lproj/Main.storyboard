@@ -37,6 +37,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ph-6P-rQ7">
                                         <rect key="frame" x="0.0" y="262" width="382" height="131"/>
                                         <state key="normal" title="Touch/Face ID"/>
+                                        <connections>
+                                            <segue destination="0fN-tO-Z0m" kind="showDetail" id="VyR-oz-DIz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyl-d4-YTd">
                                         <rect key="frame" x="0.0" y="393" width="382" height="131"/>
@@ -69,6 +72,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="126"/>
+        </scene>
+        <!--FaceID View Controller-->
+        <scene sceneID="GhJ-um-bbA">
+            <objects>
+                <viewController id="0fN-tO-Z0m" customClass="FaceIDViewController" customModule="BP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9VP-uf-Enr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bJS-2q-4BW">
+                                <rect key="frame" x="30" y="30" width="354" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w2Y-2g-8Lg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bJS-2q-4BW" firstAttribute="top" secondItem="w2Y-2g-8Lg" secondAttribute="top" constant="30" id="6Q3-Mn-yBr"/>
+                            <constraint firstItem="w2Y-2g-8Lg" firstAttribute="trailing" secondItem="bJS-2q-4BW" secondAttribute="trailing" constant="30" id="KW9-DZ-XHy"/>
+                            <constraint firstItem="bJS-2q-4BW" firstAttribute="leading" secondItem="w2Y-2g-8Lg" secondAttribute="leading" constant="30" id="PlT-KW-rGu"/>
+                            <constraint firstItem="w2Y-2g-8Lg" firstAttribute="bottom" secondItem="bJS-2q-4BW" secondAttribute="bottom" constant="12" id="dBT-Jw-VH0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="bJS-2q-4BW" id="y8G-Nq-tsN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSl-oL-5bS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="-1219"/>
         </scene>
         <!--Storage View Controller-->
         <scene sceneID="cec-uJ-jC1">
