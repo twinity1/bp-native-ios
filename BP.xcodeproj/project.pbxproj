@@ -14,6 +14,7 @@
 		78A442F425CBE25400F73A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A442F325CBE25400F73A95 /* Assets.xcassets */; };
 		78A442F725CBE25400F73A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A442F525CBE25400F73A95 /* LaunchScreen.storyboard */; };
 		78CA10D625CBE67C00B8EB78 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CA10D525CBE67C00B8EB78 /* CameraViewController.swift */; };
+		78CA10DD25CBFF7A00B8EB78 /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CA10DC25CBFF7A00B8EB78 /* GPSViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		78A442F625CBE25400F73A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78A442F825CBE25400F73A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78CA10D525CBE67C00B8EB78 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		78CA10DC25CBFF7A00B8EB78 /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				78A442F525CBE25400F73A95 /* LaunchScreen.storyboard */,
 				78A442F825CBE25400F73A95 /* Info.plist */,
 				78CA10D525CBE67C00B8EB78 /* CameraViewController.swift */,
+				78CA10DC25CBFF7A00B8EB78 /* GPSViewController.swift */,
 			);
 			path = BP;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A442EF25CBE25200F73A95 /* ViewController.swift in Sources */,
+				78CA10DD25CBFF7A00B8EB78 /* GPSViewController.swift in Sources */,
 				78CA10D625CBE67C00B8EB78 /* CameraViewController.swift in Sources */,
 				78A442EB25CBE25200F73A95 /* AppDelegate.swift in Sources */,
 				78A442ED25CBE25200F73A95 /* SceneDelegate.swift in Sources */,

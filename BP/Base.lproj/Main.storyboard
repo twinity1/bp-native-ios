@@ -30,6 +30,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXK-Np-wlX">
                                         <rect key="frame" x="0.0" y="131" width="382" height="131"/>
                                         <state key="normal" title="GPS"/>
+                                        <connections>
+                                            <segue destination="l3a-3S-6IJ" kind="showDetail" id="qt1-HS-rMo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ph-6P-rQ7">
                                         <rect key="frame" x="0.0" y="262" width="382" height="131"/>
@@ -155,6 +158,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1D-sm-7i1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1839" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RdA-0u-c3v">
+            <objects>
+                <viewController id="l3a-3S-6IJ" customClass="GPSViewController" customModule="BP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ATp-h6-6rq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nvv-MP-CtD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zm1-Li-M8T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zm1-Li-M8T" firstAttribute="trailing" secondItem="Nvv-MP-CtD" secondAttribute="trailing" id="BpM-sn-0zh"/>
+                            <constraint firstItem="Nvv-MP-CtD" firstAttribute="top" secondItem="Zm1-Li-M8T" secondAttribute="top" id="OER-g2-Sx9"/>
+                            <constraint firstItem="Nvv-MP-CtD" firstAttribute="leading" secondItem="Zm1-Li-M8T" secondAttribute="leading" id="hLz-y2-wdl"/>
+                            <constraint firstItem="Zm1-Li-M8T" firstAttribute="bottom" secondItem="Nvv-MP-CtD" secondAttribute="bottom" id="hQd-ww-20d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Nvv-MP-CtD" id="2aw-nC-1Zn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbG-t4-L9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="817"/>
         </scene>
     </scenes>
     <resources>
