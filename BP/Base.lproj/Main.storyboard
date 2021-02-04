@@ -44,6 +44,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyl-d4-YTd">
                                         <rect key="frame" x="0.0" y="393" width="382" height="131"/>
                                         <state key="normal" title="Notifications"/>
+                                        <connections>
+                                            <segue destination="c22-9z-JMO" kind="showDetail" id="cKa-sL-OpQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edK-iC-eml">
                                         <rect key="frame" x="0.0" y="524" width="382" height="131"/>
@@ -72,6 +75,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="126"/>
+        </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="f5c-Wg-V4o">
+            <objects>
+                <viewController id="c22-9z-JMO" customClass="NotificationViewController" customModule="BP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cAc-A0-wM7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xWN-K3-jAQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Tm-x0-w7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="-1887"/>
         </scene>
         <!--FaceID View Controller-->
         <scene sceneID="GhJ-um-bbA">
