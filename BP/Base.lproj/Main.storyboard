@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-at-T1t">
+                                <rect key="frame" x="16" y="60" width="382" height="786"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF2-Kr-7nw">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="131"/>
+                                        <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <segue destination="zSh-EH-3Tb" kind="show" id="zdN-q3-Nu4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXK-Np-wlX">
+                                        <rect key="frame" x="0.0" y="131" width="382" height="131"/>
+                                        <state key="normal" title="GPS"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ph-6P-rQ7">
+                                        <rect key="frame" x="0.0" y="262" width="382" height="131"/>
+                                        <state key="normal" title="Touch/Face ID"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyl-d4-YTd">
+                                        <rect key="frame" x="0.0" y="393" width="382" height="131"/>
+                                        <state key="normal" title="Notifications"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edK-iC-eml">
+                                        <rect key="frame" x="0.0" y="524" width="382" height="131"/>
+                                        <state key="normal" title="Storage"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkA-UJ-XTY">
+                                        <rect key="frame" x="0.0" y="655" width="382" height="131"/>
+                                        <state key="normal" title="Bluetooth"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W0B-at-T1t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Ndd-w1-HWG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W0B-at-T1t" secondAttribute="bottom" constant="16" id="R8n-GW-cIR"/>
+                            <constraint firstItem="W0B-at-T1t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="feM-pg-wUV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W0B-at-T1t" secondAttribute="trailing" constant="16" id="wYh-1N-KsF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="126"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="ANo-Hz-tee">
+            <objects>
+                <viewController id="zSh-EH-3Tb" customClass="CameraViewController" customModule="BP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T8b-AN-I0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxb-C3-nBp" customClass="PreviewView" customModule="BP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="fCN-EV-2gu"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wQL-Te-8Gl">
+                                <rect key="frame" x="12" y="600" width="390" height="158"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaQ-ZT-VoP">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="158"/>
+                                        <state key="normal" title="Front camera"/>
+                                        <connections>
+                                            <action selector="frontCamera:" destination="zSh-EH-3Tb" eventType="touchUpInside" id="bX3-Fx-gtW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cio-iV-Fs4">
+                                        <rect key="frame" x="130" y="0.0" width="130" height="158"/>
+                                        <state key="normal" title="Capture"/>
+                                        <connections>
+                                            <action selector="capture:" destination="zSh-EH-3Tb" eventType="touchUpInside" id="IIa-Nx-NsA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6J-45-JcS">
+                                        <rect key="frame" x="260" y="0.0" width="130" height="158"/>
+                                        <state key="normal" title="Back camera"/>
+                                        <connections>
+                                            <action selector="backCamera:" destination="zSh-EH-3Tb" eventType="touchUpInside" id="aJh-b3-TZ3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yvc-Lo-nvJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wQL-Te-8Gl" firstAttribute="top" secondItem="dxb-C3-nBp" secondAttribute="bottom" id="CHO-Y0-5LI"/>
+                            <constraint firstItem="dxb-C3-nBp" firstAttribute="leading" secondItem="Yvc-Lo-nvJ" secondAttribute="leading" id="FNF-J6-b59"/>
+                            <constraint firstItem="dxb-C3-nBp" firstAttribute="top" secondItem="Yvc-Lo-nvJ" secondAttribute="top" id="MvO-yd-6U1"/>
+                            <constraint firstItem="Yvc-Lo-nvJ" firstAttribute="bottom" secondItem="wQL-Te-8Gl" secondAttribute="bottom" constant="50" id="Nba-1v-VWP"/>
+                            <constraint firstItem="Yvc-Lo-nvJ" firstAttribute="trailing" secondItem="wQL-Te-8Gl" secondAttribute="trailing" constant="12" id="ehw-Za-C5h"/>
+                            <constraint firstItem="wQL-Te-8Gl" firstAttribute="leading" secondItem="Yvc-Lo-nvJ" secondAttribute="leading" constant="12" id="iZk-mF-Wt7"/>
+                            <constraint firstItem="Yvc-Lo-nvJ" firstAttribute="trailing" secondItem="dxb-C3-nBp" secondAttribute="trailing" id="zSN-j3-F3G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Jz-kb-vjr"/>
+                    <connections>
+                        <outlet property="previewView" destination="dxb-C3-nBp" id="1tj-cn-khr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEM-8u-hEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="126"/>
+        </scene>
+        <!--Photo Preview Controller-->
+        <scene sceneID="AWY-mY-4NI">
+            <objects>
+                <viewController storyboardIdentifier="PhotoPreviewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="USJ-Ui-IlJ" customClass="PhotoPreviewController" customModule="BP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acn-JZ-d3o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b0A-YT-xjb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jro-bH-937"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jro-bH-937" firstAttribute="trailing" secondItem="b0A-YT-xjb" secondAttribute="trailing" id="FcD-XK-vy9"/>
+                            <constraint firstItem="b0A-YT-xjb" firstAttribute="top" secondItem="Jro-bH-937" secondAttribute="top" id="RGJ-xa-W1i"/>
+                            <constraint firstItem="b0A-YT-xjb" firstAttribute="leading" secondItem="Jro-bH-937" secondAttribute="leading" id="aLm-1X-pta"/>
+                            <constraint firstItem="Jro-bH-937" firstAttribute="bottom" secondItem="b0A-YT-xjb" secondAttribute="bottom" id="nh5-vC-lHO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="b0A-YT-xjb" id="Msc-xG-ouO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1D-sm-7i1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
