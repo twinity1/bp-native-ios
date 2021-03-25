@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7806E99A260CA27600750A3B /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7806E999260CA27600750A3B /* PerformanceViewController.swift */; };
+		781C8A1425CD430F0004A193 /* BackgroundJobExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C8A1325CD430F0004A193 /* BackgroundJobExample.swift */; };
 		78A442EB25CBE25200F73A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A442EA25CBE25200F73A95 /* AppDelegate.swift */; };
 		78A442ED25CBE25200F73A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A442EC25CBE25200F73A95 /* SceneDelegate.swift */; };
 		78A442EF25CBE25200F73A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A442EE25CBE25200F73A95 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7806E999260CA27600750A3B /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
+		781C8A1325CD430F0004A193 /* BackgroundJobExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundJobExample.swift; sourceTree = "<group>"; };
 		78A442E725CBE25200F73A95 /* BP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A442EA25CBE25200F73A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A442EC25CBE25200F73A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				78CA10E025CC1BFE00B8EB78 /* StorageViewController.swift */,
 				78CA10E325CC29A600B8EB78 /* FaceIDViewContoller.swift */,
 				78CA10E625CC3AC400B8EB78 /* NotificationViewController.swift */,
+				781C8A1325CD430F0004A193 /* BackgroundJobExample.swift */,
+				7806E999260CA27600750A3B /* PerformanceViewController.swift */,
 			);
 			path = BP;
 			sourceTree = "<group>";
@@ -158,8 +164,10 @@
 				78CA10DD25CBFF7A00B8EB78 /* GPSViewController.swift in Sources */,
 				78CA10E125CC1BFE00B8EB78 /* StorageViewController.swift in Sources */,
 				78CA10D625CBE67C00B8EB78 /* CameraViewController.swift in Sources */,
+				781C8A1425CD430F0004A193 /* BackgroundJobExample.swift in Sources */,
 				78A442EB25CBE25200F73A95 /* AppDelegate.swift in Sources */,
 				78A442ED25CBE25200F73A95 /* SceneDelegate.swift in Sources */,
+				7806E99A260CA27600750A3B /* PerformanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
