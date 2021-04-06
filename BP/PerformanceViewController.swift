@@ -13,12 +13,27 @@ class PerformanceViewController : UIViewController, UITableViewDataSource {
     
     var data = Array<String>()
     
-    override func viewDidLoad() {
+    var start: Double!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        start = CFAbsoluteTimeGetCurrent()
+
         table.dataSource = self
         
         for var i in 0...99999 {
             data.append("Text.... \(i)")
         }
+        let diff = CFAbsoluteTimeGetCurrent() - start
+        print("Took \(diff) seconds")
+
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let diff = CFAbsoluteTimeGetCurrent() - start
+        print("Took \(diff) seconds")
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
